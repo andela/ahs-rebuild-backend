@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'course.apps.CourseConfig',
     'graphene_django',
+    
 ]
 
 MIDDLEWARE = [
@@ -122,5 +124,17 @@ STATIC_URL = '/static/'
 
 GRAPHENE = {
     'SCHEMA': 'ahs_rebuild_backend_web_api.schema.schema',
+<<<<<<< HEAD
 }
 
+=======
+    'MIDDLEWARE': [
+        'graphql_jwt.middleware.JSONWebTokenMiddleware',
+    ]
+}
+
+AUTHENTICATION_BACKENDS = [
+    'graphql_jwt.backends.JSONWebTokenBackend',
+    'django.contrib.auth.backends.ModelBackend',
+]
+>>>>>>> Added functionality to create users, create courses

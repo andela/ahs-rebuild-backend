@@ -1,1 +1,5 @@
 codealike.json
+__pycache__/
+ahs_rebuild_backend_web_api/__pycache__/
+.travis.yml
+db.sqlite3
