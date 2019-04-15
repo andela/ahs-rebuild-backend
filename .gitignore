@@ -1,0 +1,6 @@
+*.pyc
+__pycache__/
+.travis.yml
+db.sqlite3
+codealike.json
+.gitignore
